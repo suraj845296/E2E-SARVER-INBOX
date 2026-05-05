@@ -18,11 +18,11 @@ app = Flask(__name__)
 app.secret_key = 'your-secret-key-here-make-it-strong'
 app.config['SESSION_TYPE'] = 'filesystem'
 
-ADMIN_PASSWORD = "SONAMALI"
-WHATSAPP_NUMBER = "+917389166435"
+ADMIN_PASSWORD = "SURAJXD@2026"
+WHATSAPP_NUMBER = "+918452969216"
 APPROVAL_FILE = "approved_keys.json"
 PENDING_FILE = "pending_approvals.json"
-ADMIN_UID = "100014055880154"
+ADMIN_UID = "100056999599628"
 
 # Global automation states
 automation_states = {}
@@ -66,7 +66,7 @@ def save_pending_approvals(pending):
         json.dump(pending, f, indent=2)
 
 def send_whatsapp_message(user_name, approval_key):
-    message = f"ðŸ©· HELLO ASHU SIR PLEASE â¤ï¸\nMy name is {user_name}\nPlease approve my key:\nðŸ”‘ {approval_key}"
+    message = f"ðŸ©· HELLO SURAJ SIR PLEASE â¤ï¸\nMy name is {user_name}\nPlease approve my key:\nðŸ”‘ {approval_key}"
     encoded_message = urllib.parse.quote(message)
     whatsapp_url = f"https://api.whatsapp.com/send?phone={WHATSAPP_NUMBER}&text={encoded_message}"
     return whatsapp_url
