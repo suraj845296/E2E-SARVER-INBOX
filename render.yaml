@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: e2e-automation
+    name: Suraj e2e-automation
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
